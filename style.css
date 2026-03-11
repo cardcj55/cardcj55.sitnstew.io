@@ -25,12 +25,30 @@ body {
 
     padding: 20px 10%;
 
-    background: white;
+    background: #ED7B58;
     border-bottom: 1px solid #eee;
 }
 
 .logo {
     font-size: 24px;
+	margin:0;
+}
+
+/* logo container */
+
+.logo-area{
+	display:flex;
+	align-items:center;
+	gap:10px;
+}
+
+/* logo image */
+
+.logo-img{
+	width:70px;
+	height:70px;
+	border:none;
+	display:block;
 }
 
 .nav-links {
@@ -45,10 +63,10 @@ body {
     font-weight: 500;
 }
 
-
 /* Home Banner */
 
 .hero {
+    position: relative;
     height: 70vh;
 
     display: flex;
@@ -56,8 +74,26 @@ body {
     justify-content: center;
 
     text-align: center;
+    overflow: hidden;
 
-    background-color: #f4f4f4;
+    background-image: url("images/interior1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+    color: white;
+    max-width: 700px;
+    padding: 20px;
 }
 
 .hero-text h2 {
@@ -93,18 +129,61 @@ body {
     text-align: center;
 }
 
+.featured h2 {
+    margin-bottom: 30px;
+}
+
 .featured-items {
     display: flex;
     justify-content: center;
     gap: 40px;
-
-    margin-top: 30px;
+    flex-wrap: wrap;
 }
 
 .item {
-    max-width: 250px;
+    position: relative;
+    width: 280px;
+    min-height: 220px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
+.item-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.45);
+}
+
+.item-content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    color: #222;
+}
+
+.item-content h3 {
+    margin-bottom: 10px;
+}
+
+.featured-item1 {
+    background-image: url("images/sandwich_basil_tomato_grilled_cheese.jpg");
+}
+
+.featured-item2 {
+    background-image: url("images/chicken_barley.jpg");
+}
+
+.featured-item3 {
+    background-image: url("images/bread_bowl.jpg");
+}
 
 /* About section */
 
@@ -113,20 +192,6 @@ body {
     background-color: #f2f2f2;
     text-align: center;
 }
-
-/* ABOUT PAGE HERO */
-
-.about-hero {
-    text-align: center;
-    padding: 60px 20px;
-    background-color: #f5f5f5;
-}
-
-.about-hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
 
 /* ABOUT MAIN SECTION */
 
@@ -196,16 +261,17 @@ body {
 footer {
     text-align: center;
     padding: 20px;
-    background: white;
+    background: #ED7B58;
     border-top: 1px solid #eee;
 }
 
 .page-header{
 	text-align:center;
 	padding:50px 10%;
-	background:#f5f5f5;
+	background:#C9684B;
 }
 
+/*
 .menu-section{
 	padding:50px 10%;
 }
@@ -213,12 +279,82 @@ footer {
 .menu-items{
 	margin-bottom:30px;
 }
+*/
 
-.about-content{
-	padding:50px 15%;
-	text-align:center;
-	max-width:800px;
-	margin:auto;
+/* MENU LAYOUT */
+
+.menu-section{
+    padding:60px 10%;
+    max-width:1000px;
+    margin:auto;
+}
+
+/* each row */
+
+.menu-row{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:50px;
+    margin-bottom:60px;
+    flex-wrap:wrap;
+}
+
+/* reverse layout */
+
+.menu-row.reverse{
+    flex-direction:row-reverse;
+}
+
+/* menu text */
+
+.menu-text{
+    flex:1;
+    min-width:250px;
+}
+
+.menu-text h3{
+    margin-bottom:15px;
+}
+
+.menu-text p{
+    margin-bottom:8px;
+}
+
+/* image */
+
+.menu-image{
+    flex:1;
+    min-width:250px;
+}
+
+.menu-image img{
+    width:100%;
+    max-width:350px;
+    border-radius:8px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* menu page navigation */
+
+.menu-nav{
+	margin-top:10px;
+	display:flex;
+	justify-content:center;
+	gap:25px;
+}
+
+.menu-nav a{
+	text-decoration:none;
+	font-weight:bold;
+	color:#333;
+	padding:5px 10px;
+	border-radius:5px;
+	transition:0.2s;
+}
+
+.menu-nav a:hover{
+	background-color:#eee;
 }
 
 .gallery-grid{
@@ -274,13 +410,6 @@ footer {
 
 /*Contacts Section*/
 
-.contact-section{
-	display:flex;
-	justify-content:space-between;
-	padding:50px 10%;
-	gap:40px;
-}
-
 .contact-container{
 	display:flex;
 	justify-content:space-between;
@@ -328,3 +457,4 @@ footer {
 	width:100%;
 	border-radius:6px;
 }
+
