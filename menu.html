@@ -9,58 +9,124 @@
 
 <body>
 
-<header>
-    <nav class="navbar">
-        <h1 class="logo">Sit n' Stew Café</h1>
-
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-
-
-<section class="page-header">
-    <h2>Our Menu</h2>
-</section>
-
-
-<section class="menu-section">
-
-    <h3>Signature Soups</h3>
-
-    <div class="menu-items">
-        <p><strong>Tomato Basil</strong> — $5</p>
-        <p><strong>Chicken Noodle</strong> — $6</p>
-        <p><strong>Broccoli Cheddar</strong> — $6</p>
-    </div>
+    <header>
+        <nav class="navbar">
+			<div class="logo-area">
+				<a href="index.html">
+					<img src="images/logo.png" alt="Sit n' Stew Café Logo" class="logo-img">
+				</a>
+				<h1 class="logo">Sit n' Stew Café</h1>
+			</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
 
-    <h3>Hearty Stews</h3>
+	<section class="page-header">
+		<h2>Our Menu</h2>
+		
+		<nav class="menu-nav">
+			<a href="#sigsoup">Soups</a>
+			<a href="#heartysoup">Stews</a>
+			<a href="#sandwiches">Sandwiches & Wraps</a>
+			<a href="#beverages">Beverages</a>
+		</nav>
+	</section>
 
-    <div class="menu-items">
-        <p><strong>Beef Stew</strong> — $8</p>
-        <p><strong>Vegetable Stew</strong> — $7</p>
-    </div>
+	<!-- Menu Section -->
+
+	<section class="menu-section">
+
+		<!-- ROW 1 -->
+
+		<div class="menu-row">
+
+			<div class="menu-text">
+				<h3 id="sigsoup">Signature Soups</h3>
+
+				<p><strong>Tomato Basil</strong> - $5</p>
+				<p><strong>Chicken Noodle</strong> - $6</p>
+				<p><strong>Broccoli Cheddar</strong> - $6</p>
+				<p><strong>Pasta Fagioli</strong> - $7</p>
+				<p><strong>Italian Wedding</strong> - $6</p>
+			</div>
+
+			<div class="menu-image">
+				<img src="images/tomato.jpg" alt="Tomato Soup">
+			</div>
+
+		</div>
 
 
-    <h3>Sides</h3>
+		<!-- ROW 2 (reversed) -->
 
-    <div class="menu-items">
-        <p><strong>Fresh Bread</strong> — $2</p>
-        <p><strong>Grilled Cheese</strong> — $4</p>
-    </div>
+		<div class="menu-row reverse">
 
-</section>
+			<div class="menu-text">
+				<h3 id="heartysoup">Hearty Stews</h3>
+
+				<p><strong>Beef Barley Stew</strong> - $8</p>
+				<p><strong>Vegetable Stew</strong> - $7</p>
+				<p><strong>English Pub Split Pea</strong> - $6</p>
+				<p><strong>Creamy Vegetable</strong> - $6</p>
+				<p><strong>Cheeseburger Soup</strong> - $7</p>
+			</div>
+
+			<div class="menu-image">
+				<img src="images/beef_and_barley.jpg" alt="Beef Barley Stew">
+			</div>
+
+		</div>
 
 
-<footer>
-    <p>© 2026 Sit n' Stew Café</p>
-</footer>
+		<!-- ROW 3 -->
+
+		<div class="menu-row">
+
+			<div class="menu-text">
+				<h3 id="sandwiches">Sandwiches & Wraps</h3>
+
+				<p><strong>Basil Tomato Grilled Cheese</strong> - $2</p>
+				<p><strong>Chicken Panini</strong> - $4</p>
+				<p><strong>Chicken Caesar Wrap</strong> - $4</p>
+				<p><strong>Beef n' Cheese Wrap</strong> - $4</p>
+			</div>
+
+			<div class="menu-image">
+				<img src="images/sandwich_basil_tomato_grilled_cheese.jpg" alt="Tomato Basil Grilled Cheese">
+			</div>
+
+		</div>
+		
+		<!-- ROW 4 -->
+		
+		<div class="menu-row reverse">
+
+			<div class="menu-text">
+				<h3 id="beverages">Beverages</h3>
+
+				<p><strong>Coffee</strong> - $3</p>
+				<p><strong>Tea</strong> - $3</p>
+				<p><strong>Fountain Drink</strong> - $2 / $3</p>
+			</div>
+
+			<div class="menu-image">
+				<img src="images/oaxacan_coffee.jpg" alt="Coffee">
+			</div>
+
+		</div>
+
+	</section>
+
+	<footer>
+		<p>© 2026 Sit n' Stew Café</p>
+	</footer>
 
 </body>
 </html>
