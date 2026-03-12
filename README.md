@@ -44,7 +44,7 @@ PART 2: DESIGN (Answer ALL questions, add your own if necessary)
   Making section titles bold and larger than its corresponding text will hopefully let 
   people skim through and let them find what they need.
 7. How will consistency be maintained across pages?
-  
+  Mostly through CSS.
 8. What icons will you use?
 9. What emotions should the design evoke in users?
   You should feel like this is a welcoming place with a warm, cozy atmosphere.
@@ -60,7 +60,12 @@ PART 2: DESIGN (Answer ALL questions, add your own if necessary)
 PART 3: INTERACTIVITY (Answer ALL questions, add your own if necessary)
 
 1. What interactive elements will your site include (forms, buttons, menus, etc.)?
+  Forms, Buttons, Hover over effects, embedded Google Maps 
 2. How will users navigate the website?
+  Mostly through the navigation bar on the top. There will be anchor points on the menu and a menu navigator.
 3. Will there be form validation or user feedback? Explain.
+  I will have form validation on the for the feedback section to make sure all fields are filled before submitting. 
 4. What JavaScript functionality will you implement?
-5. How does interactivity improve user experience?
+  I will implement JavaScript to make sure the feedback form is filled out. 
+6. How does interactivity improve user experience?
+  
