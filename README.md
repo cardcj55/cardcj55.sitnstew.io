@@ -68,4 +68,4 @@ PART 3: INTERACTIVITY (Answer ALL questions, add your own if necessary)
 4. What JavaScript functionality will you implement?
   I will implement JavaScript to make sure the feedback form is filled out. 
 6. How does interactivity improve user experience?
-  
+  By making people feel like there feedback is being taken into consideration. 
