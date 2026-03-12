@@ -3,6 +3,7 @@ BCS350 Project Sit n' Stew
 PART 1: CONTENT (Answer ALL questions, add your own if necessary)
 
 1. What is the name of your business?
+
   Sit n. Stew
 2. Is the business real or fictional?
   Fictional
