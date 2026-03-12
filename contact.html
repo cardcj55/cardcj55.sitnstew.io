@@ -36,33 +36,35 @@
 	<!-- Contact Info + Form -->
 	<section class="contact-container">
 
-	<div class="contact-info">
+		<div class="contact-info">
 
-		<h3>Visit Us</h3>
+			<h3>Visit Us</h3>
 
-			<p><strong>Address:</strong> 123 Somewhere Blvd</p>
-			<p><strong>Phone:</strong> (555) 123-4567</p>
-			<p><strong>Email:</strong> atotallyrealemail@sitnstew.com</p>
+				<p><strong>Address:</strong> 123 Somewhere Blvd</p>
+				<p><strong>Phone:</strong> (555) 123-4567</p>
+				<p><strong>Email:</strong> atotallyrealemail@sitnstew.com</p>
 
-		<h3>Hours</h3>
+			<h3>Hours</h3>
 
-		<p>Mon–Fri: 9am – 8pm</p>
-		<p>Sat–Sun: 10pm – 8pm</p>
+			<p>Mon–Fri: 9am – 8pm</p>
+			<p>Sat–Sun: 10pm – 8pm</p>
 
-	</div>
+		</div>
+		
+		<form class="contact-form" id="contactForm">
+		
+			<h3>Got Feedback?</h3>
 
+			<input type="text" id="name" name="name" placeholder="Your Name" required>
 
-	<form class="contact-form">
+			<input type="email" id="email" name="email" placeholder="Your Email" required>
 
-		<input type="text" placeholder="Your Name" required>
+			<textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
 
-		<input type="email" placeholder="Your Email" required>
+			<button type="submit" class="btn">Send Message</button>
 
-		<textarea placeholder="Your Message" rows="5"></textarea>
+		</form>
 
-		<button class="btn">Send Message</button>
-
-	</form>
 
 	</section>
 
@@ -86,6 +88,8 @@
 	<footer>
 		<p>© 2026 Sit n' Stew Café</p>
 	</footer>
+	
+	<script src="script.js"></script>
 
 </body>
 </html>
